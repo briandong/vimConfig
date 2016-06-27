@@ -34,10 +34,6 @@
 	path = bundle/minibufexpl
 	url = https://github.com/fholgado/minibufexpl.vim
 	ignore = dirty
-[submodule "vim-ruby"]
-	path = vim-ruby
-	url = https://github.com/vim-ruby/vim-ruby.git
-	ignore = dirty
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
