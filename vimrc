@@ -67,6 +67,7 @@ set wildmenu
 "color scheme
 "colorscheme desert
 "colorscheme molokai
+colorscheme solarized
 if has('gui_running')
     set background=light
 else

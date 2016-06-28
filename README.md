@@ -11,6 +11,7 @@ This is the vim configuration package including the necessary plugins and .vimrc
 
 1. sync out the plugins:
 > ~/.vim$ git submodule init
+
 > ~/.vim$ git submodule update
 
 # Modification
