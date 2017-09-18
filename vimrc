@@ -130,14 +130,47 @@ let g:miniBufExplModSelTarget = 1
 let NERDTreeShowBookmarks=1
 let NERDChristmasTree=1
 let NERDTreeWinPos="left"
+"turn on/off nerdtree
 map <leader>n :NERDTreeToggle<CR>
 
 "supertab
 let g:SuperTabRetainCompletionType="context"
 
 "task list, for TODO or FIXME
+"turn on/off tasklist
 map <leader>td <Plug>TaskList
 
+"ctags
+set tags=tags;
+set autochdir
+
+"tagbar
+let g:tagbar_width=35
+let g:tagbar_autofocus=1
+"add sverilog detection to tagbar
+let g:tagbar_type_verilog_systemverilog= {
+    \ 'ctagstype' : 'verilog_systemverilog',
+    \ 'kinds'     : [
+        \ 'c:classes',
+        \ 't:tasks',
+        \ 'f:functions',
+        \ 'm:modules',
+        \ 'i:interfaces',
+        \ 'v:variables',
+        \ 'd:defines',
+        \ 'e:typedefs',
+        \ 'a:parameters'
+    \]
+\}
+"turn on/off tagbar
+map <leader>t :TagbarToggle<CR>
+"auto-open tagbar for the following file types
+autocmd BufReadPost *.cpp,*.c,*.hpp,*.cc,*.cxx,*.sv,*.v,*.svh,*.vh,*.sva,*.f,*.rb call tagbar#autoopen()
+
+
+"powerline
+"always display the status line
+set laststatus=2
 
 
 "SV support
