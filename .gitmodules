@@ -50,3 +50,12 @@
 	path = bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
 	ignore = dirty
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "bundle/powerline"]
+	path = bundle/powerline
+	url = https://github.com/powerline/powerline.git
+[submodule "bundle/systemverilog"]
+	path = bundle/systemverilog
+	url = https://github.com/nachumk/systemverilog.vim.git
