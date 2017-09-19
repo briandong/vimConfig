@@ -138,7 +138,7 @@ let g:SuperTabRetainCompletionType="context"
 
 "task list, for TODO or FIXME
 "turn on/off tasklist
-map <leader>td <Plug>TaskList
+map <leader>f <Plug>TaskList
 
 "ctags
 set tags=tags;
@@ -174,5 +174,9 @@ set laststatus=2
 
 
 "SV support
-autocmd BufRead,BufNewFile *.sv set filetype=verilogams
-autocmd BufRead,BufNewFile *.svh set filetype=verilogams
+au BufRead,BufNewFile *.sv set filetype=verilog_systemverilog
+au BufRead,BufNewFile *.svh set filetype=verilog_systemverilog
+au BufRead,BufNewFile *.v set filetype=verilog_systemverilog
+au BufRead,BufNewFile *.vh set filetype=verilog_systemverilog
+au BufRead,BufNewFile *.svi set filetype=verilog_systemverilog
+au BufRead,BufNewFile *.sva set filetype=verilog_systemverilog
