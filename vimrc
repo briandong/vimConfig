@@ -2,7 +2,7 @@
 execute pathogen#infect()
 
 "font
-set guifont=DejaVu\ Sans\ Mono\ 11
+set guifont=DejaVu\ Sans\ Mono\ 12
 
 "set message language
 let $LANG = 'en' 
@@ -11,7 +11,7 @@ let $LANG = 'en'
 set langmenu=en
 
 "initial window size
-set lines=50 columns=90
+set lines=50 columns=150
     
 "noncompatible mode
 set nocompatible
@@ -120,31 +120,43 @@ nmap <leader>s <Esc>:Ack!
 "<leader>cc - Comment out the current line or text selected in visual mode.
 "<leader>c<space> - Toggles the comment state of the selected line(s)
 
+"##########
 "minibufexpl
+"##########
 let g:miniBufExplMapWindowNavVim = 1 
 let g:miniBufExplMapWindowNavArrows = 1 
 let g:miniBufExplMapCTabSwitchBufs = 1 
 let g:miniBufExplModSelTarget = 1 
 
+"##########
 "NERDTree
+"##########
 let NERDTreeShowBookmarks=1
 let NERDChristmasTree=1
 let NERDTreeWinPos="left"
 "turn on/off nerdtree
 map <leader>n :NERDTreeToggle<CR>
 
+"##########
 "supertab
+"##########
 let g:SuperTabRetainCompletionType="context"
 
+"##########
 "task list, for TODO or FIXME
+"##########
 "turn on/off tasklist
 map <leader>f <Plug>TaskList
 
+"##########
 "ctags
+"##########
 set tags=tags;
 set autochdir
 
+"##########
 "tagbar
+"##########
 let g:tagbar_width=35
 let g:tagbar_autofocus=1
 "add sverilog detection to tagbar
@@ -167,13 +179,15 @@ map <leader>t :TagbarToggle<CR>
 "auto-open tagbar for the following file types
 autocmd BufReadPost *.cpp,*.c,*.hpp,*.cc,*.cxx,*.sv,*.v,*.svh,*.vh,*.sva,*.f,*.rb call tagbar#autoopen()
 
-
+"##########
 "powerline
+"##########
 "always display the status line
 set laststatus=2
 
-
+"##########
 "SV support
+"##########
 au BufRead,BufNewFile *.sv set filetype=verilog_systemverilog
 au BufRead,BufNewFile *.svh set filetype=verilog_systemverilog
 au BufRead,BufNewFile *.v set filetype=verilog_systemverilog
