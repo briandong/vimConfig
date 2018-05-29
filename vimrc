@@ -160,8 +160,8 @@ set autochdir
 let g:tagbar_width=35
 let g:tagbar_autofocus=1
 "add sverilog detection to tagbar
-let g:tagbar_type_verilog_systemverilog= {
-    \ 'ctagstype' : 'verilog_systemverilog',
+let g:tagbar_type_systemverilog= {
+    \ 'ctagstype' : 'systemverilog',
     \ 'kinds'     : [
         \ 'c:classes',
         \ 't:tasks',
@@ -188,9 +188,9 @@ set laststatus=2
 "##########
 "SV support
 "##########
-au BufRead,BufNewFile *.sv set filetype=verilog_systemverilog
-au BufRead,BufNewFile *.svh set filetype=verilog_systemverilog
-au BufRead,BufNewFile *.v set filetype=verilog_systemverilog
-au BufRead,BufNewFile *.vh set filetype=verilog_systemverilog
-au BufRead,BufNewFile *.svi set filetype=verilog_systemverilog
-au BufRead,BufNewFile *.sva set filetype=verilog_systemverilog
+au BufRead,BufNewFile *.sv  set filetype=systemverilog
+au BufRead,BufNewFile *.svh set filetype=systemverilog
+au BufRead,BufNewFile *.v   set filetype=systemverilog
+au BufRead,BufNewFile *.vh  set filetype=systemverilog
+au BufRead,BufNewFile *.svi set filetype=systemverilog
+au BufRead,BufNewFile *.sva set filetype=systemverilog
