@@ -160,8 +160,8 @@ set autochdir
 let g:tagbar_width=35
 let g:tagbar_autofocus=1
 "add sverilog detection to tagbar
-let g:tagbar_type_systemverilog= {
-    \ 'ctagstype' : 'systemverilog',
+let g:tagbar_type_verilog_systemverilog= {
+    \ 'ctagstype' : 'verilog_systemverilog',
     \ 'kinds'     : [
         \ 'c:classes',
         \ 't:tasks',
