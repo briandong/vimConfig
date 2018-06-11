@@ -2,7 +2,7 @@
 execute pathogen#infect()
 
 "font
-set guifont=DejaVu\ Sans\ Mono\ 12
+set guifont=DejaVu\ Sans\ Mono\ Bold\ 15
 
 "set message language
 let $LANG = 'en' 
