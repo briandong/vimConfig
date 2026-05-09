@@ -41,12 +41,23 @@ set fencs=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 
 "show line numbers
 set nu
+set relativenumber
+
+"show cursorline
+set cursorline
+
+"set wrap
+set wrap
+
+"show cmd
+set showcmd
 
 "show matching
 set showmatch
 
 "case in searching
 set ignorecase
+set smartcase
 
 "highlight
 set hlsearch
@@ -109,7 +120,7 @@ set foldmethod=indent
 set foldlevel=99
 
 "mapleader
-let mapleader=","
+let mapleader=" "
 
 "searching
 "usage: :Ack [options] {pattern} [{directories}]

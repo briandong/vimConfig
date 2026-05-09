@@ -62,3 +62,9 @@
 [submodule "bundle/vim-ft-bzl"]
 	path = bundle/vim-ft-bzl
 	url = https://github.com/bazelbuild/vim-ft-bzl.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "bundle/vim-snazzy"]
+	path = bundle/vim-snazzy
+	url = https://github.com/connorholyday/vim-snazzy.git
