@@ -5,7 +5,7 @@ This is the vim configuration package including the necessary plugins and .vimrc
 # Install
 1. git clone to local:
 ```
-  git clone git@github.com:briandong/vimConfig.git ~/.vim
+  git clone https://github.com/briandong/vimConfig.git ~/.vim
 ```
 2. create symbol link for ~/.vimrc:
 ```

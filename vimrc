@@ -2,7 +2,7 @@
 execute pathogen#infect()
 
 "font
-set guifont=DejaVu\ Sans\ Mono\ Bold\ 15
+set guifont=DejaVu\ Sans\ Mono\ Bold\ 13
 
 "set message language
 let $LANG = 'en' 
@@ -75,15 +75,17 @@ set autoindent shiftwidth=4
 set wildmode=list:full
 set wildmenu
 
-"color scheme
-"colorscheme desert
-"colorscheme molokai
-colorscheme solarized
 if has('gui_running')
     set background=light
 else
     set background=dark
 endif
+
+"color scheme
+"colorscheme desert
+"colorscheme molokai
+"colorscheme solarized
+colorscheme snazzy
 
 "charactors not be wrapped
 set iskeyword+=_,$,@,%,#,-
