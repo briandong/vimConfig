@@ -2,7 +2,11 @@
 execute pathogen#infect()
 
 "font
-set guifont=DejaVu\ Sans\ Mono\ Bold\ 13
+if has('unix')
+    set guifont=DejaVu\ Sans\ Mono\ Bold\ 13
+else
+    set guifont=Lucida_Console:h14:cANSI
+endif
 
 "set message language
 let $LANG = 'en' 
