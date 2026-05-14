@@ -55,6 +55,9 @@
 [submodule "bundle/vim-snazzy"]
 	path = bundle/vim-snazzy
 	url = https://github.com/connorholyday/vim-snazzy.git
-[submodule "bundle/markdown-preview"]
-	path = bundle/markdown-preview
-	url = https://github.com/iamcco/markdown-preview.nvim.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "bundle/vim-instant-markdown"]
+	path = bundle/vim-instant-markdown
+	url = https://github.com/instant-markdown/vim-instant-markdown.git
