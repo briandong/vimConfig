@@ -34,3 +34,12 @@ How to add plugins:
   ~/.vim$ git commit -m "updated files"
   ~/.vim$ git push
 ```
+
+# Markdown
+
+1. install Node.js and curl
+1. run `node -v` / `npm -v` and `curl` to check
+1. install the mini-server
+   * linux: `[sudo] npm -g install instant-markdown-d`
+   * windows: `npm -g install instant-markdown-d`
+1. open up a markdown file

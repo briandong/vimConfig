@@ -25,6 +25,8 @@ syntax on
 
 "filetype identification
 filetype on
+filetype indent on
+filetype plugin on
 filetype plugin indent on
 
 "temp file
@@ -211,3 +213,8 @@ au BufRead,BufNewFile *.v   set filetype=systemverilog
 au BufRead,BufNewFile *.vh  set filetype=systemverilog
 au BufRead,BufNewFile *.svi set filetype=systemverilog
 au BufRead,BufNewFile *.sva set filetype=systemverilog
+
+
+"instant markdown 
+let g:instant_markdown_theme = 'dark'
+
