@@ -13,26 +13,31 @@ This is the vim configuration package including the necessary plugins and vimrc 
 2. sync out all the plugins:
 ```shell
   cd .vim
-  ~/.vim$ git submodule init
-  ~/.vim$ git submodule update
+  git submodule init
+  git submodule update
 ```
 
 # Modify
-How to add plugins:
+
+## Add Plugin
+
 ```shell
   git submodule add https://github.com/tpope/vim-git.git bundle/vim-git
-  git submodule init
-  git submodule update
-  git submodule foreach git submodule init
-  git submodule foreach git submodule update
+```
+## Remove Plugin
+
+```shell
+  git submodule deinit bundle/vim-git
+  git rm --cached bundle/vim-git
 ```
 
-# Commit
+## Commit
+
 ```shell
-  ~/.vim$ git status
-  ~/.vim$ git add <files>
-  ~/.vim$ git commit -m "updated files"
-  ~/.vim$ git push
+  git status
+  git add <files>
+  git commit -m "updated files"
+  git push
 ```
 
 # Markdown
