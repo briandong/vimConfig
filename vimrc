@@ -80,6 +80,7 @@ set autoindent shiftwidth=4
 "auto completion with tab in cmd
 set wildmode=list:full
 set wildmenu
+set completeopt=longest,menu
 
 if has('gui_running')
     set background=light
@@ -217,4 +218,8 @@ au BufRead,BufNewFile *.sva set filetype=systemverilog
 
 "instant markdown 
 let g:instant_markdown_theme = 'dark'
+
+"jedi-vim
+let g:jedi#force_py_version = 3
+autocmd FileType python set omnifunc=python3complete#Complete
 
