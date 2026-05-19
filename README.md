@@ -48,3 +48,20 @@ This is the vim configuration package including the necessary plugins and vimrc 
    * linux: `[sudo] npm -g install instant-markdown-d`
    * windows: `npm -g install instant-markdown-d`
 1. open up a markdown file
+
+# Python Support
+
+## jedi-vim
+
+jedi-vim supports the following commands
+```shell
+* Completion <C-Space>
+* Goto assignment <leader>g (typical goto function)
+* Goto definition <leader>d (follow identifier as far as possible, includes imports and statements)
+* Goto (typing) stub <leader>s
+* Show Documentation/Pydoc K (shows a popup with assignments)
+* Renaming <leader>r
+* Usages <leader>n (shows all the usages of a name)
+* Open module, e.g. :Pyimport os (opens the os module)
+```
+
